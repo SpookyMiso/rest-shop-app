@@ -4,8 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SpookyMiso/rest-shop-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SpookyMiso/rest-shop-app/issues"
+  },
+  "homepage": "https://github.com/SpookyMiso/rest-shop-app",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.1",
+    "faker": "^3.0.0",
+    "jade": "^1.11.0",
+    "restify": "^3.0.3"
+  },
+  "devDependencies": {}
 }
