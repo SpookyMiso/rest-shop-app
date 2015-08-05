@@ -21,7 +21,8 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.get('/', function (req, res) {
   client.get('http://localhost:8080/products', function (err, _req, _res, obj) {
-    res.render('index');
+    console.log(_res.body);
+    res.render('index', { products: JSON.parse(_res.body) });
     console.log(obj);
   });
 });
